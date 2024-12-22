@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+
+.home-slider {
+    width: 100%;
+    height: 100%; /* Adjust based on your section */
+    margin: 0 auto;
+    padding: 20px 0; /* Adds space above and below */
+    overflow: hidden;
+  }
+  
+  .swiper-slide {
+    /* background: #fff; Slide background color */
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Default height for slides */
+  }
+  
+  .swiper-slide img {
+    width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 10px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center; /* Vertically center logo and text */
+    font-size: 1.8rem; /* Adjust text size */
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  header .logo img {
+    width: 50px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Spacing between logo and text */
+  }
+
+:root{
+    --main-color: #ffdf00;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;   
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #444;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body {
+    background: #222;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background: var(--main-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+.header .logo {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.header .logo span{
+    color: var(--main-color);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: #fff;
+    margin-right: 2rem;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+
+#menu-bars{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+.home .content{
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+}
+
+.home .content h3 {
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #fff;
+    margin: 1rem 0;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.home .content span {
+    color: var(--main-color); /* Optional: Highlighted text color */
+    display: inline; /* Ensures proper flow with text */
+}
+
+.home .home-slider .swiper-slide{
+    overflow: hidden;
+    border-radius: .5rem;
+    height: 50rem;
+    width: 35rem;
+}
+
+.home .home-slider .swiper-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.service .box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 tiles per row */
+    gap: 2rem; /* Spacing between tiles */
+    padding: 2rem 0;
+}
+
+.service .box-container .box {
+    border-radius: .5rem;
+    background: #333;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.service .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background: var(--main-color);
+    color: #fff;
+}
+
+.service .box-container .box h3{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.service .box-container .box p{
+    font-size: 1.4rem;
+    color: #eee;
+    line-height: 1.8;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.about-image, .about-content {
+    flex: 1; /* Both image and content will take equal space */
+    padding: 10px; /* Adds spacing around each section */
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    max-width: 100%; /* Ensures content is fully utilized */
+    padding-left: 20px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.about h2 span{
+    color: #fff;
+}
+
+.about p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.about h3 {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+}
+
+.about ul li strong {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.contact-info, .contact-form {
+    flex: 1; /* Both info and form will take equal space */
+    padding: 20px;
+}
+
+.contact-info h2 {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.contact-info h2 span{
+    color: #fff;
+}
+
+.contact-info p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.contact-info h3 {
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.contact-info ul li {
+    margin-bottom: 20px;
+}
+
+.contact-info ul li strong {
+    font-weight: bold;
+    color: #fff;
+}
+
+.contact-info ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+/* Contact Form Styles */
+.contact-form h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; /* Set text color to #333 */
+    background-color: #fff; /* Set background color */
+}
+
+.contact-form select {
+    -webkit-appearance: none; /* Remove default dropdown arrow in some browsers */
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    color: #333; /* Set text color for dropdown */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical; /* Allow resizing vertically */
+    font-family: Arial, sans-serif;
+    color: #333; /* Text color for textarea */
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form input:focus, 
+.contact-form select:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #f56a6a; /* Highlight border color on focus */
+    box-shadow: 0 0 5px rgba(245, 106, 106, 0.5); /* Optional focus shadow */
+}
+
+.contact-form .btn {
+    padding: 12px 20px;
+    background-color: var(--main-color);
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.contact-form .btn:hover {
+    background-color: #efcc00;
+}
+
+.quote {
+    text-align: center;
+    margin: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.quote h2 {
+    font-style: italic;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-left: 5px solid var(--main-color);  /* Optional color styling */
+    background-color: #333;       /* Optional background color */
+    display: inline-block;
+    margin-top: 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 10%;
+    font-size: 0.9rem;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-content,
+.footer-contact {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+.footer-content h3,
+.footer-contact h4 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.footer-content p,
+.footer-contact p {
+    margin: 5px 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.footer-content .social-links {
+    margin-top: 10px;
+}
+
+.footer-content .social-links a {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-content .social-links a:hover {
+    color: #fff;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Careers Section */
+/* .careers {
+    padding: 50px 10%;
+    background-color: #333;
+    text-align: center;
+} */
+
+.careers .heading {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.careers .heading span {
+    color: var(--main-color);
+}
+
+/* Box Shadow Matching Contact Us Section */
+.careers-box {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.careers-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.positions {
+    flex: 1 1 45%;
+    max-width: 45%;
+    text-align: left;
+    color: #333;
+}
+
+.positions h3 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.positions ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.positions li {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.positions a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.positions a:hover {
+    color: #fff;
+}
+
+.careers-image {
+    flex: 1 1 45%;
+    max-width: 45%;
+    text-align: center;
+}
+
+.careers-image img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    .swiper-slide {
+        height: 300px; /* Reduce slide height on smaller screens */
+      }
+
+    .careers-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .positions,
+    .careers-image {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .positions ul {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-content,
+    .footer-contact {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .footer-content .social-links a {
+        margin: 0 10px;
+    }
+    .quote h2 {
+        font-size: 1.2em;  /* Reduce font size on smaller screens */
+        padding: 10px 15px;
+    }
+
+    .service .box-container {
+        grid-template-columns: 1fr; /* 1 tile per row */
+        gap: 1.5rem;
+    }
+
+    #menu-bars{
+        display: initial;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        border-top: .1rem solid #222;
+        background: #333;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .navbar a{
+        display: flex;
+        background: #333;
+        border-radius: .5rem;
+        padding: 1.3rem;
+        margin: 1.3rem;
+        font-size: 2rem;
+    }
+
+    .home .content h3 {
+        font-size: 1.5rem;
+    }
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-image {
+        margin-bottom: 20px; /* Add space between image and content */
+    }
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info, .contact-form {
+        flex: none;
+        max-width: 100%;
+        padding: 20px 10px;
+    }
+
+    .contact-info ul li {
+        font-size: 1.8rem;
+    }
+
+    .contact-form input, .contact-form select, .contact-form textarea {
+        font-size: 1.1rem;
+    }
+
+    .contact-form .btn {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:450px){
+    .swiper-slide {
+        height: 250px; /* Further reduce for very small screens */
+      }
+    .quote h2 {
+        font-size: 1em;  /* Further reduce font size for very small screens */
+        padding: 8px 10px;
+    }
+    html{
+        font-size: 50%;
+    }
+
+    .home .home-slider .swiper-slide{
+        width: 27rem;
+    }
+    .home .content h3 {
+        font-size: 2rem;
+        line-height: 1.4; /* Adjust line spacing for smaller text */
+    }
+
+    /* Ensure three-line layout */
+    .home .content h3 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem; /* Add space between lines */
+    }
+}
